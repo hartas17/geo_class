@@ -18,7 +18,7 @@ In django can use this method like:
 
     # find all objects inside the given rectangle
 
-    objects = Objecta.objects.filter(
+    objects = Object.objects.filter(
                    lat__lte = max_lat,
                    lat__gte = min_lat,
                    lng__lte = max_lng,
@@ -34,7 +34,7 @@ In django can use this method like:
 
     objects = filter(is_within_radius, objects)
 
-    # Sort gas stations by given parameter
+    # Sort object by given parameter
     objects = sort_object_by(objects, sort_by, distance_to_center, 1)
 
     objects = list(objects)
